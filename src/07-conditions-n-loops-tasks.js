@@ -339,7 +339,7 @@ const getDigitalRoot = (num) => {
 const isBracketsBalanced = (str) => {
   let resStr = str;
 
-  while (true) {
+  while (str) {
     if (resStr.includes('[]')) {
       resStr = resStr.replace('[]', '');
     } else if (resStr.includes('()')) {
